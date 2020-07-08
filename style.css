@@ -1,9 +1,16 @@
 body{
     font-family: 'Titillium Web', sans-serif;
 }
-.header{
+
+.navbar-section{
     background-color: #87509c;
     padding-top:40px;
+
+}
+.header{
+    background-color: #87509c;
+    padding-top: 140px;
+
 }
 .nav-link{
     color:white !important;
@@ -17,6 +24,7 @@ body{
 .nav-item{
     padding-left:20px;
 }
+
 .header-btn{
     padding: 10px 35px;
     border:none;
@@ -32,8 +40,7 @@ body{
     font-weight: 700;
 }
 .header-content{
-    margin-top: 140px;
-    height: 390px;
+    height: 350px;
 }
 
 
@@ -62,9 +69,185 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+.meet-section{
+    background-color: #e7f1f8;
+    padding: 80px;
+}
+
+
+.content-title-meet{
+    font-size: 40px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    color:#3c4761;
+    font-weight:700;
+
+}
+.content-title-meet:after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 135px;
+    background-color:#c8d9e5;
+    border-radius: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .content-para{
     font-size: 18px;
 }
+
+
+.content-para1{
+    font-size: 18px;
+    color:#3c4761;
+}
+.team{
+    text-align: center;
+    padding:10px;
+}
+.team-pic{
+    width:100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    padding:15px;
+
+}
+.team-name{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #27283d;
+}
+.team-name:hover{
+    color: #27283d;
+}
+.team-title{
+    color:#3cbee8;
+    font-size: 16px;
+}
+.icon{
+    width: 32px;
+    padding-left: 12px;
+}
+
+
+
+.skill-section{
+    background-color: white;
+    padding: 80px;
+}
+
+.content-title-skill{
+    font-size: 40px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    color:#3c4761;
+    font-weight:700;
+}
+.content-title-skill:after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 135px;
+    background-color:#dfe8ed;
+    border-radius: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-col{
+    text-align: center;
+    background-color: none;
+}
+.progress-title{
+    margin-top: 20px !important;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bottom2-section{
+    background-color: #ffdd99;
+    padding: 80px;
+}
+
+
+.content-title-portfolio{
+    font-size: 40px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    color:#000000;
+    font-weight:700;
+}
+.content-title-portfolio:after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 135px;
+    background-color:#e5c37f;
+    border-radius: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-portfolio{
+    height:38px;
+    width: 84px;
+    margin-left: 15px;
+    background-color: #ebc985;
+    border:none;
+    border-radius: 8px;
+}
+.btn-portfolio:hover{
+    background-color: white;
+}
+.btn-portfolio.active{
+    height:38px;
+    width: 84px;
+    margin-left: 15px;
+    background-color: white;
+    border:none;
+}
+
+.images{
+    margin-top:60px;
+}
+.image-title{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.portfolio-image{
+    width:100%;
+}
+
+.bottom-btn{
+    padding: 10px 35px;
+    border:none;
+    border-bottom: 3px solid #14a58c;
+    border-radius: 5px;
+    background-color: #17c2a4;
+    color:white;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+
 
 
 .card-deck{
@@ -121,9 +304,50 @@ body{
         font-size: 16px;
         margin-bottom: 80px;
     }
-    
-    
+    .bottom-section{
+        padding: 20px;
+    }
     .col-md-3{
         margin-bottom: 30px !important;
     }
+    .meet-section{
+        padding: 20px;
+    }
+    .content-title-meet{
+        font-size: 22px;
+    }
+    .skill-section{
+        padding:15px;
+    }
+    .content-title-skill{
+        font-size: 28px;
+        padding-top: 35px;
+    }
+    .content-title-portfolio{
+        font-size: 28px;
+        margin-top: 30px;
+    }
+    .bottom2-section{
+        padding:15px;
+    }
+    .content-para1{
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    .btn-portfolio{
+        height:32px !important;
+        width: 84px !important;
+    }
+    .image-title{
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .bottom-btn{
+        margin-bottom: 40px;
+    }
+    .footer{
+        font-size: 14px;
+    }
+
 }
