@@ -234,7 +234,7 @@ body{
     width:100%;
 }
 
-.bottom-btn{
+.portfolio-btn{
     padding: 10px 35px;
     border:none;
     border-bottom: 3px solid #14a58c;
@@ -245,19 +245,114 @@ body{
     margin-top: 50px;
 }
 
+.about-section{
+    background-color: #D74680;
+    color:#ffffff;
+    padding: 100px 0;
+}
+
+.content-title-about{
+    font-size: 40px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    font-weight:700;
+}
+.content-title-about:after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 135px;
+    background-color:#b73c6d;
+    border-radius: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.comment-about{
+    margin-top: 50px;
+}
+.single-comment{
+    margin-top: 40px;
+}
+
+.client-img{
+    width:80%;
+    border-radius: 50%;
+    border:8px solid #ffffff;
+}
+.clients-comment{
+    font-size: 21px;
+}
+.client-name{
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.client-title{
+    font-size: 17.6px;
+    color: #ffdd99;
+    font-style: italic;
+}
 
 
+.get-feedback{
+    background-color: #3c5499;
+    color:white;
+    padding:80px;
+}
 
-.card-deck{
-    margin-top: 70px;
+
+.content-title-feedback{
+    font-size: 40px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight:700;
 }
-.card{
-    text-align:center;
+.content-title-feedback:after{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 135px;
+    background-color:#273a71;
+    border-radius: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
 }
-.card-icon{
-    width:90px;
-    height:124px;
+
+
+.get-client-feedback{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
+
+.form-control{
+    background-color: #273a71;
+    color:white;
+    border:none;
+}
+.message{
+    margin-top: 20px;
+}
+.message-textarea{
+    width:100%;
+    background-color: #273a71;
+    border:none;
+    color:white;
+}
+
+
 .card-icon{
     width:90px;
     height:124px;
@@ -341,11 +436,31 @@ body{
         font-weight: 700;
         margin-bottom: 40px;
     }
-    .bottom-btn{
+    .portfolio-btn{
         margin-bottom: 40px;
     }
     .footer{
         font-size: 14px;
     }
-
+    .about-section{
+        text-align: center;
+    }
+    .content-title-about{
+        font-size: 28px;
+    }
+    .clients-comment{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    .get-feedback{
+        padding:15px;
+        padding-top: 40px;
+    }
+    .content-title-feedback{
+        font-size: 32px;
+    }
+    .form-control{
+        width:100%;
+        margin:0;
+    }
 }
