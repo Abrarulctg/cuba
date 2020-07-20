@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/hover-min.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
 
 </head>
 
@@ -28,23 +29,23 @@
                 </button>
 
                 <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <ul class="navbar-nav ml-auto navDiv">
+                        <li class="nav-item activeNav inactive">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item inactive">
                             <a class="nav-link" href="#service">Services</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item inactive">
+                            <a class="nav-link" href="#skill">Skill</a>
+                        </li>
+                        <li class="nav-item inactive">
                             <a class="nav-link" href="#work">Works</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
-                        </li>
-                        <li class="nav-item">
+                        <li class="nav-item inactive">
                             <a class="nav-link" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item inactive">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
 
@@ -165,7 +166,7 @@
     </section>
 
 
-    <section class="skill-section">
+    <section class="skill-section" id="skill">
         <div class="container">
             <div class="text-center">
                 <h1 class="content-title-skill">We Got Skills!</h1>
@@ -194,52 +195,57 @@
     </section>
 
 
-    <section class="bottom2-section">
+    <section class="bottom2-section" id="work">
         <div class="container">
             <div class="text-center">
-                <h1 class="content-title-portfolio">We Got Skills!</h1>
+                <h1 class="content-title-portfolio">Our Portfolio</h1>
                 <p class="content-para1">Lorem ipsum dolor sit amet consectetur adipisicing elit laudantium
                     repellendus.<br /> Voluptates, Voluptates, dignissimos? Ducimus expedita </p>
             </div>
 
-            <div class="d-flex justify-content-center">
-                <button class="btn-portfolio active hvr-underline-from-left">All</button>
-                <button class="btn-portfolio hvr-underline-from-left">Web</button>
-                <button class="btn-portfolio hvr-underline-from-left">Apps</button>
-                <button class="btn-portfolio hvr-underline-from-left">Icons</button>
-            </div>
+            <div>
+                <div class="d-flex justify-content-center" id="btn-portfolioDiv">
+                    <button class="btn-portfolio active hvr-underline-from-left" id="allBtn">All</button>
+                    <button class="btn-portfolio hvr-underline-from-left" id="webBtn">Web</button>
+                    <button class="btn-portfolio hvr-underline-from-left" id="appBtn">Apps</button>
+                    <button class="btn-portfolio hvr-underline-from-left" id="iconBtn">Icons</button>
+                </div>
 
-            <div class="">
-                <div class="row images">
-                    <div class="col-md-6 text-center hvr-float">
+                <div class="row images row-cols-1 row-cols-md-2">
+                    <div class="col-md-6 text-center hvr-float wow bounceInLeft isotope mock-up">
                         <img class="portfolio-image" src="image/1.png" alt="">
                         <h1 class="image-title">isometric perspective mock-up</h1>
                     </div>
-                    <div class="col-md-6 text-center hvr-float">
+
+                    <div class="col-md-6 text-center hvr-float wow bounceInRight isotope tAppUi">
                         <img class="portfolio-image" src="image/2.png" alt="">
                         <h1 class="image-title">Time Zone app Ui</h1>
                     </div>
-                </div>
-                <div class="row images">
-                    <div class="col-md-6 text-center hvr-float">
+
+                    <div class="col-md-6 text-center hvr-float wow bounceInLeft isotope Icon">
                         <img class="portfolio-image" src="image/3.png" alt="">
                         <h1 class="image-title">Viro Media Players Ui</h1>
                     </div>
-                    <div class="col-md-6 text-center hvr-float">
+
+                    <div class="col-md-6 text-center hvr-float wow bounceInRight isotope blogUi">
                         <img class="portfolio-image" src="image/4.png" alt="">
                         <h1 class="image-title">Blog / Magazine Flat Ui Kit</h1>
                     </div>
                 </div>
+                <!-- <div class="row images">
+    
+                    </div> -->
                 <div class="text-center">
                     <button class="portfolio-btn hvr-float">Load More Projects</button>
                 </div>
             </div>
+        </div>
     </section>
 
 
 
     <!-- About Section -->
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="text-center">
                 <h1 class="content-title-about">What people say about us</h1>
@@ -323,7 +329,7 @@
 
 
     <!-- Feedback Section -->
-    <section class="get-feedback">
+    <section class="get-feedback" id="contact">
         <div class="container">
             <div class="text-center">
                 <h1 class="content-title-feedback">Get in Touch</h1>
@@ -378,9 +384,21 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

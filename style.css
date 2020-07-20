@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Titillium Web', sans-serif;
 }
@@ -12,16 +15,14 @@ body{
 }
 .nav-link{
     color:white !important;
-}
-.nav-link.active{
-    background-color: #643a79;
-    border-radius: 8px;
     padding: 7px 20px !important;
 }
-
-.nav-item{
-    padding-left:20px;
+.activeNav, .nav-link:hover{
+    background-color: #643a79;
+    border-radius: 8px;
 }
+
+
 
 .header-btn{
     padding: 10px 35px;
@@ -44,7 +45,7 @@ body{
 
 .service-section{
     background-color: #17c2a4;
-    padding:70px;
+    padding:70px 40px;
 }
 
 .content-title {
@@ -67,6 +68,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+
 .meet-section{
     background-color: #e7f1f8;
     padding: 80px;
@@ -210,16 +212,14 @@ body{
     border:none;
     border-radius: 8px;
 }
-.btn-portfolio:hover{
+.active, .btn-portfolio:hover{
     background-color: white;
 }
-.btn-portfolio.active{
-    height:38px;
-    width: 84px;
-    margin-left: 15px;
+
+/* .btn-portfolio.active{
     background-color: white;
-    border:none;
-}
+    
+} */
 
 .images{
     margin-top:60px;
