@@ -8,6 +8,9 @@
 //     })
 // }
 
+
+// Active Button Bg Change
+// Using jQuery
 $(document).ready(function(){
     $('.nav-item').click(function(){
       $('.nav-item').removeClass('activeNav').addClass('inactive');
@@ -15,10 +18,10 @@ $(document).ready(function(){
       });
   })
 
+  
 
-
-
-
+// Active Button Bg Change
+// Using For Loop
 var portfolioBtn = document.getElementById("btn-portfolioDiv");
 var btnPortfolio = portfolioBtn.getElementsByClassName("btn-portfolio");
 for (var i=0; i< btnPortfolio.length; i++){
@@ -39,10 +42,10 @@ $("#webBtn").click(function(){
 })
 
 $("#appBtn").click(function(){
-    $(".isotope").filter(".Icon").hide(2000);
+    $(".isotope").filter(".Icon").hide(500);
     $(".isotope").filter(".blogUi").hide(2000);
     $(".mock-up").show(2000);
-    $(".tAppUi").show(2000);
+    $(".tAppUi").show(1000);
 })
 $("#iconBtn").click(function(){
     $(".isotope").filter(".mock-up").hide(2000);
@@ -55,3 +58,7 @@ $("#iconBtn").click(function(){
 $("#allBtn").click(function(){
     $(".isotope").show(2000);
 })
+
+
+
+
